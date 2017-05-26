@@ -22,7 +22,8 @@ int main(){
         while(resp=='s'||resp=='S'){
                 
                 cout <<"Menu"<<endl;
-                cout <<"1-Login"<<endl;
+                cout <<"1-Ingresar como Administrador"<<endl;
+                cout <<"2-Ingresar como usuario normal"<<endl;
                 cout <<"2-Salir"<<endl;
                 cin>> option;
                 switch (option){
@@ -31,11 +32,29 @@ int main(){
                         		//Agregar
                         		Usuario* temp = new Administrador(50,50,"Nasralla","123456566","919219829",23,"Nasralla","123",1920,123456);
                         		
+                        		cout <<
 
-								usuarios.push_back(temp);
+                        		if(temp->getUsername=="Nasralla"&&temp->getContra=="123"){
+                        			 cout<<"Bienvenido Administrador"<<endl;
+                        			 cout<<"Menu"<<endl;
+                					 cout<<"1-Agregar"<<endl;
+                					 cout<<"2-Listar"<<endl;
+                					 cout<<"3-Eliminar"<<endl;
+                					 cout<<"4-Modificar"<<endl;
+                					 cin>> option;
 
-								cout<<usuarios.size()<<endl;
+                				} else{
+                					cout <<"No es un Administrador"<<endl;
+                				}
+
+								
 						break;
+						}
+
+						case 2:{
+							//Usuarios
+
+
 						}
 				}
 	}
