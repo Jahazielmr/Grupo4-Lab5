@@ -66,7 +66,7 @@ string Usuario::getUsername(){
    return Username;
 }
 
-void Usuario::setContra(string Contraseña){
+void Usuario::setContra(string Contra){
    this-> Contra=Contra;
 }
 

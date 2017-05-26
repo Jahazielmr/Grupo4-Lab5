@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Personal.h"
 
 using namespace std;
 
@@ -9,14 +10,14 @@ using namespace std;
 
 class Mesero:public Personal{
     protected:
-        vector <string> Platillos;
+        string Platillos;
     public:
         Mesero(string,string,string,int,string,string, int,double, string);
         Mesero();
         string getPlatillos();
-        void setPlatillos(vector <string>);
+        void setPlatillos(string);
 
-        void entregar(vector <string>);
+        void entregar(string);
 
 };
 

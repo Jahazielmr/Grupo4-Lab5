@@ -14,7 +14,7 @@ class Lavaplato : public Personal{
 
 		Lavaplato(int, string, string, string, int, string, string, int, double);
 		int getNivel();
-		void setNivel(int Nivel);
+		void setNivel(int);
 
 
 };

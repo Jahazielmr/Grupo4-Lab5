@@ -1,25 +1,6 @@
-<<<<<<< HEAD
-#pragma once
-#include"Persona.h"
-#include<string>
-using namespace std;
-
-class Personal : Persona{
-
-	protected:
-		string Puesto;
-
-	public:
-		Personal(string, string);
-		string getPuesto();
-		void setPuesto(string Puesto);
-
-
-};
-
-=======
 #include <iostream>
 #include <string>
+#include "Usuario.h"
 
 using namespace std;
 
@@ -27,17 +8,17 @@ using namespace std;
 #define PERSONAL_H
 class Personal: public Usuario{
     protected:
-        int AñoContratacion;
+        int AContratacion;
         double Sueldo;
     public:
         Personal(string,string,string,int,string,string, int,double);
         Personal();
-        int getAñoContratacion();
-        void setAñoContratacion(int);
+        int getAContratacion();
+        void setAContratacion(int);
 
         double getSueldo();
         void setSueldo(double);
 
 };
 #endif
->>>>>>> aafcbd5220c05b0bf0e780a73e76b84117f86195
+

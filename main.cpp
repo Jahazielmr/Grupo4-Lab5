@@ -1,7 +1,7 @@
 #include "Usuario.h"
 #include "Personal.h"
 #include "Cliente.h"
-#include "Administrador"
+#include "Administrador.h"
 #include "Lavaplato.h"
 #include "Mesero.h"
 #include "Chef.h"
@@ -29,8 +29,8 @@ int main(){
 
                         case 1:{
                         		//Agregar
-                        		Usuarios* temp = new Administrador(50,50,"Nasralla",23456789,995835152,23,"Nasralla","lluvia",1980,200000000);
-                        		Usuarios* temp = new Administrador(50,50,"OSCARWILDE",23456789,995835152,23,"Nasralla","lluvia",1980,200000000);
+                        		Usuario* temp = new Administrador(50,50,"Nasralla","123456566","919219829",23,"Nasralla","123",1920,123456);
+                        		
 
 								usuarios.push_back(temp);
 
