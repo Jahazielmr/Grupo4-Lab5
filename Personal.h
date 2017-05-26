@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+#pragma once
+#include"Persona.h"
+#include<string>
+using namespace std;
+
+class Personal : Persona{
+
+	protected:
+		string Puesto;
+
+	public:
+		Personal(string, string);
+		string getPuesto();
+		void setPuesto(string Puesto);
+
+
+};
+
+=======
 #include <iostream>
 #include <string>
 
@@ -20,3 +40,4 @@ class Personal: public Usuario{
 
 };
 #endif
+>>>>>>> aafcbd5220c05b0bf0e780a73e76b84117f86195

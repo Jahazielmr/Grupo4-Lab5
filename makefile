@@ -1,7 +1,8 @@
-Main: Main.o Usuario.o Cliente.o Personal.o Administrador.o Chef.o Lavaplato.o Mesero.o -o Main
+main: main.o Usuario.o Cliente.o Personal.o Administrador.o Chef.o Lavaplato.o Mesero.o -o main
+	g++ main.o Usuario.o Cliente.o Personal.o Administrador.o Chef.o Lavaplato.o -o main
 
-Main.o: Main.cpp Usuario.h Cliente.h Personal.h Administrador.h Chef.h Lavaplato.h Mesero.h 
-	g++ -c Main.cpp
+main.o: main.cpp Usuario.h Cliente.h Personal.h Administrador.h Chef.h Lavaplato.h Mesero.h 
+	g++ -c main.cpp
  
 Usuario.o: Usuario.cpp Usuario.h 
 	g++ -c Usuario.cpp 
