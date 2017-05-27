@@ -55,7 +55,7 @@ int main(){
 
                         		
 
-                        		if(temp->getUsername()=="Nasralla"&&temp->getContra()=="123"){
+                        		if(temp->getUsername()==user&&temp->getContra()==pass){
 
                         			 cout<<"Bienvenido Administrador"<<endl;
                         			 cout<<"Menu"<<endl;
