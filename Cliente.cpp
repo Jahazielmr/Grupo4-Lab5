@@ -17,6 +17,11 @@ Cliente::Cliente(){
 
 }
 
+void Cliente::escribir(ofstream& file){
+    Usuario::escribir(file);
+    file<<"Direccion:"<<Direccion<<"Ranting de restaurante"<<Estrellas<<endl;  
+}
+
 void Cliente::setDireccion (string Direccion ){
    this-> Direccion =Direccion ;
 }

@@ -1,4 +1,5 @@
 #include "Chef.h"
+#include <string>
 
 Chef::Chef(string Nombre,string ID,string NumeroCel,int Edad,string Username,string Contra, int AContratacion,double Sueldo, string PlatilloFavorito,int RantingChef){
     this->PlatilloFavorito=PlatilloFavorito;
@@ -15,6 +16,13 @@ Chef::Chef(string Nombre,string ID,string NumeroCel,int Edad,string Username,str
 Chef::Chef(){
 
 }
+
+void Chef::escribir(ofstream& file){
+    Usuario::escribir(file);
+    Personal::escribir(file);
+    file<<"Platillo Favorito:"<<PlatilloFavorito<<", Ranting Chef: "<<RantingChef<<endl;  
+}
+
 void Chef::setPlatilloFavorito(string PlatilloFavorito){
    this-> PlatilloFavorito=PlatilloFavorito;
 }

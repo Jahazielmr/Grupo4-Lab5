@@ -15,7 +15,15 @@ Mesero::Mesero(string Nombre,string ID,string NumeroCel,int Edad,string Username
 
 Mesero::Mesero(){
 
-}void Mesero::setPlatillos(string Platillos){
+}
+
+void Mesero::escribir(ofstream& file){
+    Usuario::escribir(file);
+    Personal::escribir(file);
+    file<<"Platillo :"<<Platillos<<endl;  
+}
+
+void Mesero::setPlatillos(string Platillos){
    this-> Platillos=Platillos;
 }
 string Mesero::getPlatillos(){

@@ -16,6 +16,11 @@ Personal::Personal(){
 
 }
 
+void Personal::escribir(ofstream& file){
+    Usuario::escribir(file);
+    file<<"Año Contratacion:"<<AContratacion<<", Sueldo: "<<Sueldo<<endl;  
+}
+
 void Personal::setAContratacion(int AContratacion){
    this-> AContratacion=AContratacion;
 }

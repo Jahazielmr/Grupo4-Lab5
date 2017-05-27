@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 
+
 using namespace std;
 
 Usuario::Usuario(string Nombre,string ID,string NumeroCel,int Edad,string Username,string Contra){
@@ -15,6 +16,21 @@ Usuario::Usuario(string Nombre,string ID,string NumeroCel,int Edad,string Userna
 
 Usuario::Usuario(){
 
+}
+
+void Usuario::guardarTXT(){
+    ofstream file;
+    string ruta = "Nombre.txt";
+    stringstream ss;
+    ss<<"Usuarios.txt";
+    ruta=ss.str();
+    file.open(ruta.c_str());
+    escribir(file);
+    file.close();
+}
+
+void Usuario::escribir(ofstream& file){
+  file<<"Nombre:\t"<<Nombre<<", ID: "<<ID<<", NumeroCel: "<<NumeroCel<<", Edad: "<<Edad<<", Username: "<<Username<<", Contraseña: "<<Contra;
 }
 
 void Usuario::setNombre(string Nombre){

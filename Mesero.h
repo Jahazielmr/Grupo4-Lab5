@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include "Personal.h"
+#include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -18,6 +20,8 @@ class Mesero:public Personal{
         void setPlatillos(string);
 
         void entregar(string);
+
+        virtual void escribir(ofstream& file);
 
 };
 

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Personal.h"
+#include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -19,6 +21,8 @@ class Chef: public Personal{
 
         int getRantingChef();
         void setRantingChef(int);
+
+        virtual void escribir(ofstream& file);
 
 };
 #endif

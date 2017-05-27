@@ -1,0 +1,2 @@
+Nombre:	pija, ID: qwe, NumeroCel: 1234556789, Edad: 23, Username: Jazz, Contraseña: 123Nombre:	pija, ID: qwe, NumeroCel: 1234556789, Edad: 23, Username: Jazz, Contraseña: 123Año Contratacion:1892, Sueldo: 1234
+Platillo :pizza

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
-
+#include <sstream>
+#include <fstream> 
 
 using namespace std;
 
@@ -34,6 +35,9 @@ class Usuario{
 
         string getContra();
         void setContra(string);
+
+        void guardarTXT();
+        virtual void escribir(ofstream& file);
 
 };
 #endif

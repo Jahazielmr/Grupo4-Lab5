@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Usuario.h"
+#include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -13,11 +15,16 @@ class Cliente:public Usuario{
     public:
         Cliente(string,string,string,int,string,string,string,int);
         Cliente();
+
+        
+
         string getDireccion ();
         void setDireccion (string);
 
         int getEstrellas();
         void setEstrellas(int);
+
+        virtual void escribir(ofstream& file);
 
 };
 #endif

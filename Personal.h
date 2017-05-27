@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 #include "Usuario.h"
+#include <sstream>
+#include <fstream>
+
 
 using namespace std;
 
@@ -18,6 +21,8 @@ class Personal: public Usuario{
 
         double getSueldo();
         void setSueldo(double);
+
+        virtual void escribir(ofstream& file);
 
 };
 #endif

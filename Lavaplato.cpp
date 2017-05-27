@@ -13,7 +13,11 @@ Lavaplato::Lavaplato( int Nivel, string Nombre, string ID, string NumeroCel, int
    this->Sueldo=Sueldo;
 }
 
-
+void Lavaplato::escribir(ofstream& file){
+    Usuario::escribir(file);
+    Personal::escribir(file);
+    file<<"Nivel de animo:"<<Nivel<<endl;  
+}
 
 
 int Lavaplato::getNivel(){
@@ -26,4 +30,6 @@ void Lavaplato::setNivel(int Nivel){
 	this->Nivel =Nivel;
 
 }
+
+
 
