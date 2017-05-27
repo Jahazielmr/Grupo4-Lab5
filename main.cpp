@@ -11,21 +11,19 @@
 #include <typeinfo>
 using namespace std;
 
-<<<<<<< HEAD
 Usuario* meseroAgregar();
 Usuario* lavaplatoAgregar();
 Usuario* chefAgregar();
 double prom(vector<Usuario*>);
 string menor(vector <Usuario*>);
 string mayor(vector <Usuario*>);
-=======
 
 Lavaplato* Gritar(Lavaplato*);
 Lavaplato* Agradar(Lavaplato*);
 bool Renunciar(Lavaplato*);
 double Aumento(Lavaplato*);
 int Despedir();
->>>>>>> e174b7e357ac993e61fe3fc9ffdd63fa29ef1015
+
 
 int main(){
 
@@ -48,7 +46,6 @@ int main(){
                         		//Ingresar como admin
                         		Usuario* temp = new Administrador(50,50,"Nasralla","123456566","919219829",23,"Nasralla","123",1920,123456);
                         		
-<<<<<<< HEAD
                         		string user, pass;
 
                         		cout<<"Ingrese Usuario: "<<endl;
@@ -56,11 +53,10 @@ int main(){
                         		cout<<"Ingrese Contraseña:"<<endl;
                         		cin>>pass;
 
-                        		if((temp->getUsername()==user)&&(temp->getContra()==pass)){
-=======
+                        		
 
                         		if(temp->getUsername()=="Nasralla"&&temp->getContra()=="123"){
->>>>>>> e174b7e357ac993e61fe3fc9ffdd63fa29ef1015
+
                         			 cout<<"Bienvenido Administrador"<<endl;
                         			 cout<<"Menu"<<endl;
                 					 cout<<"1-Agregar"<<endl;
@@ -426,7 +422,6 @@ return 0;
 }
 
 
-<<<<<<< HEAD
 
 
 
@@ -464,7 +459,8 @@ Usuario* meseroAgregar(){
 	Usuario* temp = new Mesero(Nombre, ID, NumeroCel, Edad, Username, Contra, AContratacion , Sueldo, Platillos);
 
 	return temp;
-=======
+}
+
 Lavaplato* Gritar(Lavaplato* lavaplato){
 	int num;
 	
@@ -474,12 +470,10 @@ Lavaplato* Gritar(Lavaplato* lavaplato){
 	lavaplato->setNivel(num);
 
 return lavaplato;
->>>>>>> e174b7e357ac993e61fe3fc9ffdd63fa29ef1015
 
 
 }
 
-<<<<<<< HEAD
 Usuario* lavaplatoAgregar(){
 
 	int Nivel;
@@ -557,7 +551,7 @@ Usuario* chefAgregar(){
 
 
 }
-=======
+
 Lavaplato* Agradar(Lavaplato* lavaplato){
 	int num;
 	
@@ -594,4 +588,4 @@ double Aumento(Lavaplato* lavaplato){
 
 
 }
->>>>>>> e174b7e357ac993e61fe3fc9ffdd63fa29ef1015
+
